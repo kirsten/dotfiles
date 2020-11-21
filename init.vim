@@ -6,5 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'preservim/nerdtree'
 call plug#end()
 
+let mapleader = ","
+
 map \  :NERDTreeToggle<CR>
 map \| :NERDTreeFind<CR>
