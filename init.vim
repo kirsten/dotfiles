@@ -3,6 +3,7 @@
 " source ~/.vimrc
 
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 call plug#end()
 
