@@ -9,6 +9,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'overcache/NeoSolarized'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
@@ -159,5 +160,7 @@ autocmd FileType *
 
 " Color Schemes
 " -------------
-let g:seoul256_background = 235
-colo seoul256
+" let g:seoul256_background = 235
+" colo seoul256
+set termguicolors
+colorscheme NeoSolarized
