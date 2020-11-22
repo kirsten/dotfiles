@@ -10,6 +10,9 @@ Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/vim-emoji'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'mxw/vim-jsx'
 Plug 'neovimhaskell/haskell-vim'
@@ -52,3 +55,7 @@ autocmd FileType *
   \   call SuperTabSetDefaultCompletionType("context") |
   \ endif
 
+" Color Schemes
+"""""""""""""""""
+let g:seoul256_background = 235
+colo seoul256
