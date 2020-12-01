@@ -158,6 +158,15 @@ autocmd FileType *
                   \   call SuperTabSetDefaultCompletionType("context") |
                   \ endif
 
+" Linting
+" -------------
+let g:ale_linters = {
+\  'python': ['flake8', 'mypy'],
+\  'ruby': ['rubocop'],
+\  'javascript': ['eslint'],
+\ }
+
+
 " Color Schemes
 " -------------
 " let g:seoul256_background = 235
