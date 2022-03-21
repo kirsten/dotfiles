@@ -48,6 +48,8 @@ set incsearch                   " Incremental search
 set history=1024                " History size
 set smartcase                   " Smart case-sensitivity when searching (overrides ignorecase)
 set hls                         " search with highlights by default
+set foldmethod=syntax
+set nofoldenable                " Open files with all folds open by default
 
 " Key Bindings
 " ------------
