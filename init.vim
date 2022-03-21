@@ -146,7 +146,7 @@ map <F1>            <Nop>
 imap <F1>           <Nop>
 
 " FZF
-map <leader>f :FZF<CR>
+map <leader>f :GFiles<CR>
 map <leader>a :Ag<CR>
 
 " Prettier
