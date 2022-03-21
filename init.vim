@@ -16,6 +16,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
@@ -143,6 +146,9 @@ imap <F1>           <Nop>
 map <leader>f :FZF<CR>
 map <leader>a :Ag<CR>
 
+" Prettier
+map <leader>p :Prettier<CR>
+
 " SuperTab
 " --------
 " Pick completion type based on context
@@ -160,12 +166,18 @@ autocmd FileType *
 
 " Linting
 " -------------
+let g:airline#extensions#ale#enabled = 1
 let g:ale_linters = {
 \  'python': ['flake8', 'mypy'],
 \  'ruby': ['rubocop'],
-\  'javascript': ['eslint'],
+\  'javascript': ['eslint', 'standard', 'typescript'],
 \ }
 
+let g:ale_fixers = {
+\  '*': ['trim_whitespace'],
+\ }
+
+let g:prettier#autoformat = 1
 
 " Color Schemes
 " -------------
